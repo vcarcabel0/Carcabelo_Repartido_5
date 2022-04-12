@@ -9,99 +9,178 @@
     <script src="https://kit.fontawesome.com/869eb9e89e.js" crossorigin="anonymous"></script>
     <link href= "https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="media/icono.png">
 </head>
 <body>
     <header>
-        <div class="text-light">
-            <h1 class="text-center text-info">Valentin Carcabelo</h1>
-            <p class="text-center">DESARROLLADOR WEB</p>
-            <nav class="text-center">
-                    <a href="#perfil">Perfil</a>
-                    <a href="#historial">Historial Academico</a>
-                    <a href="#">Opiniones</a>
-                    <a href="#">Contactame</a>
-            </nav>
-        </div>
+        <div class="">
+            <div class="text-light bg-dark">
+                <h1 class="text-center text-info">Valentin Carcabelo</h1>
+                <p class="text-center">DESARROLLADOR WEB</p>
+                <nav class="text-center">
+                    <a href="#perfil"><button type="button" class="btn btn-outline-light">Perfil</button> </a>
+                    <a href="#historial"><button type="button" class="btn btn-outline-light">Historial Academico</button> </a>
+                    <a href="#ref"><button type="button" class="btn btn-outline-light">Referencias</button> </a>
+                </nav>
+            </div>
+        </div>  
         <section>
             <article class="d-flex justify-content-around">
-                <div class="m-5">
-                    <img src="media/yo.jpeg" alt="yo" width="350">
+            <div>
+                <div class="p-5 m-4">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="media/yo.png" class="d-block w-50" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="media/yo(2).png" class="d-block w-50" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="media/yo(3).webp" class="d-block w-50" alt="...">
+                          </div>
+                        </div>
+                      </div>
                 </div>
-                <div class="text-light p-4 m-5 border bnorder-white col-4">
-                    <h3 class="fs-4">SOBRE MI</h3> <hr> <br>
-                    <p>Actualmente estoy estudiando Desarrollo de paginas web
-                        y estoy cursando 2 de bachillerato informatico
-                    </p> <br> <br>
-                    <h3 class="fs-4">VIRTUDES/CONOCIMIENTOS</h3> <hr> <br>
-                    <ul>
-                        <li>Organizacion</li>
-                        <li>Autocontrol</li> <br>
-                        <li>Desarrollo en HTML,CSS</li>
-                        <li>Ingles basico</li>
-                    </ul>
-                    <br><br>
-                    <h3 class="fs-4">CONTACTA CONMIGO EN</h3> <hr>
-                    <p><i class="fa-solid fa-envelope"></i> <stan class="text-info"> vcarcabelo@gmail.com </stan></p>
-                    <p><i class="fa-brands fa-whatsapp"></i><stan class="text-info"> (+598) 093 030 390</stan> </p>
-                    <p><i class="fa-brands fa-instagram"></i> <stan class="text-info"> @vcarcabelo</stan> </p>
-                    <p><i class="fa-brands fa-linkedin-in"></i> <stan class="text-info"> Valentin Carcabelo</stan></p>
-                    <p><i class="fa-solid fa-location-dot"></i> <stan class="text-info"> Av. 18 Julio 123 Uruguay</stan></p>
+                <div class="accordion accordion-flush p-4 m-3" id="accordionFlushExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                          SOBRE MI
+                        </button>
+                      </h2>
+                      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Me llamo <code>Valentin Carcabelo</code>, tengo <code> 17 años</code> vivo en el<code> Cerro</code>
+                        actualmente estoy cursando 2º año de <code> Bachillerato Informatico</code> y tambien estoy estudiando en un curso aparte que es de <code> Desarrolo Web</code>.</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                          VIRTUDES/CONOCIMIENTOS
+                        </button>
+                      </h2>
+                      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>Desarrollo en HTML y CSS</li>
+                                <li>Ingles Basico</li>
+                                <li>Organizacion</li>
+                                <li>Autocontrol</li>
+                            </ul>
+                        </div>
+                      </div>
+                    </div>
                 </div>
+            </div>
             </article>
+            <div class="d-flex justify-content-around m-5">
+                <a href="#contacto"><button type="button" class="btn btn-outline-light">Contactame</button> </a>
+            </div>
         </section>
         <hr class="text-info">
     </header>
     <main class="text-light">
         <article>
             <div class="p-4 m-3" id="perfil">
-                <h2>PERFIL</h2>
+                <h2 class="fs-4">PERFIL</h2>
                 <h3 class="fs-6">Como dije anteriormente, estudio Desarrollo web en centro providencia <br>
                     en un curso llamado Matea, aunque no sola mente estudio Desarrollo web, tambien estoy en mi segundo <br>
                     año de bachillerato informatico</h3>
             </div>
             <div class="p-4 m-3">
-                <h2 class="fs-5">MIS HABILIDADES</h2>
-                <h3 class="fs-6">Soy especialmente habilidoso en:</h3>
+                <h2 class="fs-5">CAPASIDADES PERSONALES</h2>
+                <h3 class="fs-6">Soy especialmente habilidoso: </h3>
                 <ul>
                     <li>En el area de computacion</li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>Trabajando bajo presion</li>
+                    <li>Aprendiendo</li>
                 </ul>
             </div>
         </article>
     </main>
     <hr class="text-info">
+    <section class="coment container" id="ref">
+        <div class="row text-light">
+            <div class="col-12 text-center py-5 bg-info p-2 text-white bg-opacity-10" fs-2">
+                <h4>Referencias:</h4> 
+                
+            </div>
+            <div class="col12 bg-info p-2 text-white bg-opacity-10 text-center p-3 px-4">
+                <p>
+                    Es un compañero un tanto tímido, pero una vez que uno logra acercarse se da cuenta que tiene un buen sentido del humor, y que es dedicado a la hora de realizar proyectos, además de tener una buena noción de lo estético.
+                </p> 
+                <p>
+                    Con respecto a sus trabajos se puede ver un avance notorio, y buena comprensión de los conceptos, ya que están bien aplicados, además que siempre trata de meterle su toque a las consignas.                    
+                </p>
+        </div>
+        </div>
+    </section> <br>
+    <hr class="text-info">
     <section>
         <article>
-            <div class="text-light p-4 m-3" id="historial">
-                <h2>HISTORIAL ACADEMICO</h2> <hr>
-                <h3 class="fs-6">Bachillerato Tecnologico</h3>
-                <p>ITI-InsitutoTecnologicoInformatica | marzo 2019 - actualidad</p>
-                <ul>
-                    <li>2º año de Bachillerato</li>
-                    <li>Sin materias previas</li>
-                </ul>
-                <h3 class="fs-6">MATEA</h3>
-                <p>Centro Providencia | marzo 2022 - actualidad</p>
-                <p>Grandes conocimientos para usar:</p>
-                <ul>
-                    <li><i class="fa-brands fa-html5">HTML</i></li>
-                    <li><i class="fa-solid fa-file-code">CSS</i></li>
-                    <li><i class="fa-brands fa-bootstrap">BOOTSTRAP</i></li>
-                    <li><i class="fa-brands fa-github">GITHUB</i> </li>
-                    <li>VISUALSTUDIOCODE</li>
-                    <li><i class="fa-solid fa-terminal">TERMINAL</i></li>
-                </ul>
+            <div class="p-4 m-3 text-light" id="historial">
+                <h2 class="text-start fs-4">HISTORIAL ACADEMICO</h2>
+                <h3 class="fs-6">Soy una persona que nunca fue de estudiar pero aun asi nunca me fue mal en dicha actividad. <br> <br>
+                    Nunca me lleve ninguna materia a examen y solo repeti un año <br>
+                    por la pandemia que surgio en el 2020.</h3>
+            </div>
+                <div class="text-light p-4 m-3">
+                <div>
+                    <h3 class="fs-6">Bachillerato Tecnologico</h3>
+                    <p>ITI-InsitutoTecnologicoInformatica | marzo 2019 - actualidad</p>
+                    <ul>
+                        <li> <stan class="text-info">2º año de Bachillerato</stan></li>
+                        <li> <stan class="text-info">Sin materias previas</stan></li>
+                    </ul>
+                </div>
+                <div class="text-light"id="matea">
+                    <h3 class="fs-6">MATEA</h3>
+                    <p>Centro Providencia | marzo 2022 - actualidad</p>
+                    <p>Grandes conocimientos para usar:</p>
+                    <ul>
+                        <li><i class="fa-brands fa-html5">HTML</i></li>
+                        <div class="progress m-4">
+                            <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                          <li><i class="fa-solid fa-file-code">CSS</i></li>
+                          <div class="progress m-4">
+                              <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                          <li><i class="fa-brands fa-bootstrap">BOOTSTRAP</i></li>
+                          <div class="progress m-4">
+                              <div class="progress-bar" role="progressbar" style="width: 40%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                          <li><i class="fa-brands fa-github">GITHUB</i> </li>
+                          <div class="progress m-4">
+                              <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                          <li>VISUALSTUDIOCODE</li>
+                          <div class="progress m-4">
+                              <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                          <li><i class="fa-solid fa-terminal">TERMINAL</i></li>
+                          <div class="progress m-4">
+                              <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                    </ul>
+                </div>
             </div>
         </article>
-    </section>
-    <footer>
-        <div>
-        <i class="fa-brands fa-github"></i>
-        <i class="fa-brands fa-linkedin-in"></i>
-        <i class="fa-brands fa-instagram"></i>
+    </section> <br>
+    <hr class="text-info">
+    <footer id="contacto">
+        <div class="text-light p-4 m-3">
+            <h3 class="fs-4">PUEDES CONTACTAR CONMIGO EN: </h3>
+            <i class="fa-brands fa-instagram"><stan class="text-info">@vcarcabelo</stan></i><br> <br>
+            <i class="fa-solid fa-envelope"><stan class="text-info">vcarcabelo@gmail.com</stan></i><br> <br>
+            <i class="fa-brands fa-facebook"><stan class="text-info">Valenin Carcabelo</stan></i><br> <br>
+            <i class="fa-brands fa-whatsapp"><stan class="text-info">093 030 390</stan></i><br> <br>
+            <i class="fa-solid fa-location-dot"><stan class="text-info">Av.18 Julio 123 Uruguay</stan></i><br> <br>
+
         </div>
     </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
